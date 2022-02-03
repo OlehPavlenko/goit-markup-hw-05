@@ -22,7 +22,7 @@
      <a href="" class="logo">Web<span class="logo-inner">Studio</span></a>
      <ul class="list-header">
          <li class="item">
-             <a href="" class="navigation-link active-page">Студия</a>
+             <a href="" class="navigation-link active-page current">Студия</a>
          </li>
          <li class="item">
              <a href="./portfolio.html" class="navigation-link">Портфолио</a>
@@ -51,7 +51,16 @@
      <section class="hero overlay">
         <div class="container hero-button">
        <h1 class="hero-caption">Эффективные решения для вашего бизнеса</h1>
-       <button type="button" class="hero-btn">Заказать услугу</button>
+       <button data-modal-open type="button" class="hero-btn">Заказать услугу</button>
+    </div>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="close-modal">
+                <svg class="icon-modal" width="11px" height="11px">
+                    <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
     </div>
      </section>
      <section class="text section">
@@ -269,7 +278,6 @@
          </ul>
         </div>
      </section>
- </div>
  <section class="section-clients section">
      <div class="container">
          <h2 class="caption">Постоянные клиенты</h2>
@@ -317,7 +325,7 @@
         </a>
     </li>
 </ul>
-     <!-- </div> -->
+     </div>
  </section>
 </main>
 <footer class="footer">
@@ -369,14 +377,6 @@
     </div>
 </div>
 </footer>
-<div class="backdrop is-hidden">
-    <div class="modal">
-        <button class="close-modal">
-            <svg class="icon-modal" width="11px" height="11px">
-                <use href="./symbol-defs.svg#icon-Vector"></use>
-            </svg>
-        </button>
-    </div>
-</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
